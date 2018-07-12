@@ -78,3 +78,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+// hack for https://github.com/aws/aws-amplify/issues/678
+(window as any).global = window;
